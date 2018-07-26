@@ -21,6 +21,24 @@ class App extends Component {
         }
       ]
     };
+
+    setTimeout(()=>{ //remove a random hobbie of a randome instructor
+      const randInd = Math.floor(
+        Math.random() * 
+        this.state.instructors.length
+      );
+      const randInst = this.state.instructors[randInd];
+      const hobbyIndex = Math.floor(
+        Math.random * 
+        randInst.hobbies.length
+      )
+      const instructors = this.state.instructors.slice(0);
+      instructors[randInd]
+            .hobbies.splice(hobbyIndex,1); //hobbie removed
+      this.setState({instructors})
+      
+
+    },5000);
   }
   render() {
     const instructors = this.state.instructors.map((instructor, index) => (
