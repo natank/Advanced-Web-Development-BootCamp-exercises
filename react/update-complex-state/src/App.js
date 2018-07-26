@@ -23,7 +23,7 @@ class App extends Component {
     };
 
     setTimeout(()=>{ //remove a random hobbie of a randome instructor
-      const randInd = Math.floor(
+      const randInd = Math.floor( //index of a random instructor
         Math.random() * 
         this.state.instructors.length
       );
@@ -32,7 +32,7 @@ class App extends Component {
         Math.random * 
         randInst.hobbies.length
       )
-      const instructors = this.state.instructors.slice(0);
+      const instructors = [...this.state.instructors]; //clone state.instructors    
       instructors[randInd]
             .hobbies.splice(hobbyIndex,1); //hobbie removed
       this.setState({instructors})
