@@ -1,0 +1,7 @@
+.Box {
+	box-sizing: border-box;
+	width: 12.5%;
+	padding-bottom: 12.5%;
+	margin-bottom: 2px;
+	float:left;
+}
