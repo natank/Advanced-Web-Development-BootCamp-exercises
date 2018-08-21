@@ -1,0 +1,23 @@
+.Navbar {
+	background-color: #2b3c4f;
+	color: #FFF;
+	text-align: right;
+}
+
+.Navbar li {
+	float: right;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.Navbar li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

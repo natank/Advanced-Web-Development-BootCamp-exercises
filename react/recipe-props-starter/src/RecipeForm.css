@@ -1,0 +1,47 @@
+.form {
+	padding: 15px;
+}
+
+.form__element {
+	display: block;
+}
+
+.form__title {
+	margin-right: 15px;
+}
+
+.form__title__text {
+	float: right;
+	padding: 0;
+}
+
+.form__close {
+	text-align: right;
+	margin-bottom: 1rem;
+}
+
+.form__instructions__text {
+	width: 100%;
+}
+
+.form__ingredient {
+	width: 100%;
+}
+
+.form__ingredient__text {
+	float: right;
+	width: 80%;
+}
+
+.form__button--blue {
+	background-color: #2b3c4f;
+	display: block;
+	float: none;
+	color: #FFF;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

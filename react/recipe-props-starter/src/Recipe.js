@@ -2,11 +2,17 @@ import React, {Component} from 'react';
 import './Recipe.css';
 
 class Recipe extends Component {
+  
+  deleteRecipe() {
+    const title = this.props.Recipe.title;
+    this.props.deleteRecipe(title);
+  }
+
   render() {
-    const {title, img, instructions} = this.props;
-    const ingredients = this.props.ingredients.map((ing, index) => (
-      <li key={index}>{ing}</li> 
-    ));
+    const {title, img, instructions, ingredients} = this.props.Recipe;
+    const ingredientElements = ingredients.map((ing, index) => 
+      <li key={index}>{ing}</li>  
+    );
     return (
       <div className="recipe-card">
         <div className="recipe-card-img">
@@ -16,11 +22,12 @@ class Recipe extends Component {
           <h3 className="recipe-title">{title}</h3>
           <h4>Ingredients:</h4>
           <ul>
-            {ingredients}
+            {ingredientElements}
           </ul>
           <h4>Instructions:</h4>
           <p>{instructions}</p>
         </div>
+        <button onClick = {this.deleteRecipe.bind(this)} id="delete" className="btn-delete">Delete</button>
         
       </div>
     );
