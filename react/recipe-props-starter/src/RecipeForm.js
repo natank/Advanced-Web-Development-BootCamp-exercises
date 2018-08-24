@@ -60,12 +60,17 @@ class RecipeForm extends Component {
 		return(
 		<form onSubmit={this.handleSubmit.bind(this)} style={this.formStyle} className="form">
 				
-				<div className="form__close"><button onClick= {this.hideForm.bind(this)}>x</button></div>
+				<div className="form__close">
+					<button onClick= {this.hideForm.bind(this)}>x</button>
+				</div>
 				
 				<label className="form__element">
 					<span className="form__title">Title</span>
 					<input type="text" id="title" value={this.state.title} 
-						onChange={this.handleTitleChange.bind(this)} name="title" className="form__title__text"/>
+						onChange={this.handleTitleChange.bind(this)} 
+						name="title" 
+						className="form__title__text"
+					/>
 				</label>
 
 				<label className="form__element"> 
