@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flag Game</title>
+	<link rel="stylesheet" type="text/css" href="flag-game.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 class="header__title">Guess The Flag</h1>
+	</header>
+
+	<form class= "Control-Bar Container">
+		
+		<ul class="Control-Bar__Countries">
+			<li class="Control-Bar__Country">
+				<input type="radio" name="countries" id="brazil" value="Brazil">
+				<label for="brazil">Brazil</label>
+			</li>
+			<li class="Control-Bar__Country">
+				<input type="radio" name="countries" id="israel" value="Israel">
+				<label for="israel">Israel</label>
+			</li>
+			<li class="Control-Bar__Country">
+				<input type="radio" name="countries" id="france" value="France">
+				<label for="france">France</label>
+			</li>
+			<li class="Control-Bar__Country">
+				<input type="radio" name="countries" id="germany" value="Germany">
+				<label for="germany">Germany</label>
+			</li>
+		</ul>
+		<button type="submit" class="Control-Bar__guess">
+			GUESS
+		</button>
+	</form>	
+	<div class="flag Container">
+		<img src="france-flag-medium.jpg"/> 
+	</div>
+</body>
+</html>

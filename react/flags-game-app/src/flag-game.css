@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+header {
+	position: relative;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px #000000;
+	background-image: url("world.jpg");
+	height: 250px;
+
+}
+
+.Control-Bar {
+	display: flex;
+	diplay: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Control-Bar__Countries {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.Control-Bar__Country {
+	display: inline-block;
+	margin-right: 2rem;
+	font-size: 1.3rem;
+}
+
+.header__img {
+	width: 100%;
+}
+
+.header__title {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:0;
+	transform: translate(-50%, -50%);
+}
+
+.Control-Bar__btn {
+	height: 1.2rem;
+	color: #FFF;
+	background-color: #708CBD; 
+}
+
+.flag {
+	text-align: center
+}
+
+.Container {
+	width: 66%;
+	margin: auto;
+}
+.flag img{
+	width: 70%;
+	box-shadow: 3px 3px black;
+}
