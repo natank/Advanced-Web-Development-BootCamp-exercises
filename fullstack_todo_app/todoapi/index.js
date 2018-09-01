@@ -3,7 +3,7 @@ var express = require('express'),
     bodyParser = require('body-parser')
 var todoRoutes = require('./routes/todos')
 
-process.env.PORT = 3000;
+process.env.PORT = 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
